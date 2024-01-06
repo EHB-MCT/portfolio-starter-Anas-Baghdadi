@@ -30,6 +30,8 @@ RUN npm install
 # Copy the rest of the application to the container
 COPY . .
 
+EXPOSE 3000
+
 # Specify the command to run on container start
-CMD ["npx", "nodemon", "src/index.js"]
+CMD ["npm", "run", "dev"]
 
